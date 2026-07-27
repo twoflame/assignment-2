@@ -53,9 +53,6 @@ def predict(
     return f"Renewal Probability: {prob:.2f} | Churn Risk: {risk}"
 
 # Set up Gradio interface
-import
-import gradio as gr
-
 iface = gr.Interface(
     fn=predict,
     inputs=[
