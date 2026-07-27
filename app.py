@@ -16,8 +16,11 @@ with open("healthy_meals_pipeline.pkl", "wb") as f:
 
 import pandas as pd
 import gradio as gr
-with open("healthy_meals_pipeline.pkl", "rb") as f:
+
+import gzip
+with gzip.open("healthy_meals_pipeline.pkl.gz", "rb") as f:
     pipeline = pickle.load(f)
+
 
 # Build Gradio app
 def predict(
