@@ -1,5 +1,5 @@
 gradio
-scikit-learn
+cikit-learn==1.6.1
 numpy
 pickle
 pandas
