@@ -12,8 +12,6 @@ import pickle
 with open("healthy_meals_pipeline.pkl", "wb") as f:
     pickle.dump(pipeline, f)
 
-!pip install -q gradio scikit-learn==1.7.2
-
 import pandas as pd
 import gradio as gr
 
